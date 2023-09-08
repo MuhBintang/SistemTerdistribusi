@@ -10,7 +10,7 @@ class Banner extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel inputPanel = new JPanel();
-        JTextField nameField = new JTextField(20);
+        JTextField nameField = new JTextField(25);
         JButton submitButton = new JButton("Submit");
 
         submitButton.addActionListener(e -> {
@@ -28,18 +28,18 @@ class Banner extends JFrame {
         getContentPane().add(inputPanel, BorderLayout.NORTH);
         getContentPane().add(label, BorderLayout.CENTER);
 
-        setSize(400, 100);
+        setSize(1920, 1080);
         setVisible(true);
     }
 
     void moveBanner() {
         Thread thread = new Thread(() -> {
             int x = getWidth();
-            while (x > -bannerText.length() * 8) {
+            while (x > -bannerText.length() * 50) {
                 x -= 5;
                 label.setText(padSpaces(x) + bannerText);
                 try {
-                    Thread.sleep(100); // Ubah angka ini untuk mengatur kecepatan perpindahan
+                    Thread.sleep(10); 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
