@@ -1,0 +1,20 @@
+Nama	: Muhammad Bintang
+Kelas	: TRPL 3C
+NIM	: 2111082027
+
+
+Sebagai seorang mahasiswa, kita dapat menyimpulkan bahwa pemahaman tentang sinkronisasi dalam sistem terdistribusi adalah krusial untuk memastikan kerjasama yang efektif antara entitas dalam jaringan. Dalam upaya mencapai sinkronisasi, beberapa aspek yang perlu diperhatikan melibatkan pengaturan urutan kejadian, berbagi sumber daya, pengecualian bersama, dan sinkronisasi waktu.
+
+Ketika menjelajahi alasan untuk sinkronisasi dan kerjasama, terdapat kebutuhan untuk menyepakati pengurutan peristiwa, berbagi sumber daya, memiliki pemahaman bersama tentang waktu di lintas komputer, dan berkoordinasi dalam mengakses sumber daya. Beberapa contoh konkret dari implementasi sinkronisasi termasuk dalam pembacaan dan penulisan sistem file terdistribusi, pelacakan kendaraan dalam jaringan sensor kamera, dan transaksi keuangan dalam sistem e-commerce terdistribusi.
+
+Dalam hal taksonomi sinkronisasi, fokus utama adalah pada sinkronisasi waktu dan pengecualian bersama. Adopsi Coordinated Universal Time (UTC) sebagai referensi waktu primer dalam sistem terdistribusi menunjukkan pentingnya standar waktu bersama. Protokol sinkronisasi terkenal seperti Network Time Protocol (NTP) menggunakan UTC untuk menjaga keselarasan jam di seluruh komputer dalam jaringan.
+
+Selanjutnya, pemahaman tentang hardware timer, clock skew, frequency, dan skew memberikan wawasan mendalam tentang tantangan yang dihadapi dalam mencapai sinkronisasi waktu yang tepat. Algoritma seperti Algoritma Cristian dan Algoritma Berkeley membantu mengatasi masalah-masalah ini dengan mengidentifikasi server waktu yang akurat dan mengestimasi offset waktu pada sisi klien.
+
+Dalam konteks arsitektur dan strata, protokol NTP membentuk hirarki logis dengan strata sebagai indikator level ketepatan waktu. Operasi NTP melibatkan interaksi antara time server untuk mencapai sinkronisasi yang akurat.
+
+Selain itu, pemahaman tentang konsep jam logis, seperti Jam Logis Lamport dan Jam Vektor, membawa kesadaran akan kebutuhan untuk menangani perbedaan laju proses tanpa mengukur waktu fisik secara tepat. Konsep ini mendukung definisi urutan peristiwa tanpa tergantung pada waktu absolut.
+
+Pentingnya pemilihan koordinator dalam sistem terdistribusi diilustrasikan melalui algoritma pemilihan seperti Bully dan Ring. Selain itu, pendekatan eksklusi mutual terpusat dan desentralisasi memberikan opsi untuk mengatur akses ke sumber daya bersama, dengan masing-masing pendekatan memiliki kelebihan dan kelemahan.
+
+Terakhir, kesimpulan utama yang dapat diambil adalah bahwa studi mengenai sinkronisasi, algoritma jam, eksklusi mutual, dan protokol berbasis kuorum adalah kunci dalam merancang sistem terdistribusi yang handal dan efisien. Meskipun terdapat tantangan seperti fault-tolerance dan koordinasi dalam algoritma desentralisasi, solusi-solusi ini memberikan fondasi yang kuat untuk mencapai keandalan dan ketahanan terhadap kegagalan dalam lingkungan terdistribusi.
